@@ -11,6 +11,15 @@
      box-sizing: border-box;
  }
 
+ html {
+     overflow-y: scroll;
+ }
+
+ p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -64,7 +73,7 @@
 }
 
 .my-navbar li {
-    padding: 2px 10px; 
+    padding: 2px 10px;
     display: inline;
 }
 
@@ -72,6 +81,27 @@
 
 .inner-wrap-main {
     padding: 30px 0;
+}
+
+.region-main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 65%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+    margin-left: 4.6875%;
+}
+
+.region-sidebar-left, .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 28.125%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+}
+
+.next-previous {
+    margin-bottom: 24px;
 }
 
 /* Footer */
@@ -86,7 +116,25 @@
 }
 
 .region-footer>.block {
-    padding-top: 30px;
+    padding-top: 100px;
     width: 100%;
     text-align: center;
+}
+
+.author-byline img {
+    width: 80px;
+    float: left;
+    padding: 5px;
+}
+
+.author-byline {
+    overflow: auto;
+    border: 2px solid #fff;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
 }
