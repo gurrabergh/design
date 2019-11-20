@@ -1,0 +1,160 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.next {
+	float: right;
+}
+/* Container */
+
+.wrap-all {
+    background-color: #ccc;
+    width: 1100px;
+    margin: auto;
+}
+
+.outer-wrap {
+    width: 100%;
+    clear: both;
+}
+
+.row::after {
+    overflow: auto;
+    clear: both;
+}
+/* Header */
+
+.region-header-col-1 {
+    float: left;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+.region-header-col-3 {
+    float: left;
+    width: 20%;
+}
+
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.my-navbar li {
+    padding: 2px 10px;
+    display: inline;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+
+}
+/* Main */
+
+.inner-wrap-main {
+    padding: 30px 0;
+}
+
+.region-main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 65%;
+    margin-left: .523%;
+    margin-right: .52%;
+    margin-left: 4.6%;
+}
+
+.region-main.has-sidebar-right {
+	display: inline;
+	float: left;
+	width: 65%;
+	margin-right: .52%;
+	margin-left: .52%;
+}
+
+.region-sidebar-right {
+    margin-left: 4.7%;
+}
+
+.region-sidebar-left, .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 28.125%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+}
+
+.region-main {
+    &.has-sidebar-left.has-sidebar-right {
+        width: 55%
+    }
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 15%;
+}
+
+.next-previous {
+    margin-bottom: 24px;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+    background-color: green;
+    color: white;
+}
+
+.inner-wrap-footer {
+    padding: 30px 0;
+}
+
+.region-footer>.block {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.author-byline img {
+    width: 80px;
+    float: left;
+    padding: 5px;
+}
+
+.author-byline {
+    overflow: auto;
+    border: 2px solid #fff;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
+}
