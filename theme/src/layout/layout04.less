@@ -11,6 +11,14 @@
  * General layout
  */
 
+@navbarBG: black;
+@navbarCol: white;
+@inWrapHead: black;
+@siteLogoText: white;
+@burgarMeny: white;
+@footerBG: black;
+@footerTxt: white;
+@authBorder: white;
 
  .row {
      #desinax-vgrid.row();
@@ -31,11 +39,8 @@
  .next-previous {
 	margin-bottom: 22px;
 }
- /* Container */
 
- // .wrap-all {
- //     background-color: #ccc;
- // }
+ /* Container */
 
 
  .vgrid .inner-wrap {
@@ -61,9 +66,9 @@
  }
 
  .my-navbar li {
-     background-color: black;
+     background-color: @navbarBG;
      opacity: 0.8;
-     color: white;
+     color: @navbarCol;
  }
 
  .site-logo {
@@ -101,13 +106,13 @@
 
  .inner-wrap-header {
      #desinax-vgrid.grid(100%);
-     background-color: black;
+     background-color: @inWrapHead;
 
  }
 
  .site-logo-text a {
      text-decoration: none;
-     color: white;
+     color: @siteLogoText;
  }
 
  .region-header,
@@ -120,7 +125,7 @@
  }
 
 a.rm-button .rm-button-face-1 {
-    color: white;
+    color: @burgarMeny;
 }
  /* Main */
 
@@ -168,8 +173,8 @@ a.rm-button .rm-button-face-1 {
  /* Footer */
 
  .outer-wrap-footer {
-     background-color: black;
-     color: white;
+     background-color: @footerBG;
+     color: @footerTxt;
  }
 
  .site-footer {
@@ -185,7 +190,7 @@ a.rm-button .rm-button-face-1 {
  }
 
  .author-byline {
-      border: 2px solid #fff;
+      border: 2px solid @authBorder;
       float: left;
       margin-top: 5px;
  }

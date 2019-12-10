@@ -1,7 +1,12 @@
 /*!
- * Stylesheet for design kmom03.
+ * Colorful theme for kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+/*!
+ * Base design for kmom04.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -366,9 +371,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: black;
-  background-color: #ccc;
-  font: 16px/1.375 Verdana, Geneva, sans-serif;
+  color: #fff;
+  background-color: #AC8F37;
+  font: 16px/1.375 'Architects Daughter', cursive;
 }
 img {
   max-width: 100%;
@@ -382,7 +387,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Indie Flower', cursive;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -398,7 +403,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.15789474;
   font-weight: normal;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #333378;
   margin-bottom: 21px;
 }
 h1 ~ h1,
@@ -417,7 +422,7 @@ h2 {
   line-height: 1.46666667;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #333378;
 }
 h2 + h3 {
   margin-top: 22px;
@@ -427,7 +432,7 @@ h3 {
   line-height: 1.57142857;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333378;
 }
 h3 + h4 {
   margin-top: 22px;
@@ -437,7 +442,7 @@ h4 {
   line-height: 1.83333333;
   font-weight: normal;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333378;
 }
 h4 + h5 {
   margin-top: 22px;
@@ -446,7 +451,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.1;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333378;
 }
 h5 + h6 {
   margin-top: 22px;
@@ -455,7 +460,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.1;
   margin-bottom: 21px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333378;
 }
 p {
   margin-bottom: 22px;
@@ -515,7 +520,7 @@ samp {
   padding-right: 1px;
 }
 code {
-  background-color: #eee;
+  background-color: #333378;
 }
 pre,
 div.code,
@@ -763,7 +768,7 @@ hr::after {
   margin-right: 0.52083333%;
 }
 .my-navbar li {
-  background-color: black;
+  background-color: #AC7A37;
   opacity: 0.8;
   color: white;
 }
@@ -808,7 +813,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: black;
+  background-color: #AC7A37;
 }
 .site-logo-text a {
   text-decoration: none;
@@ -879,7 +884,7 @@ a.rm-button .rm-button-face-1 {
 }
 /* Footer */
 .outer-wrap-footer {
-  background-color: black;
+  background-color: #ACA137;
   color: white;
 }
 .site-footer {
@@ -897,7 +902,7 @@ a.rm-button .rm-button-face-1 {
   padding: 5px;
 }
 .author-byline {
-  border: 2px solid #fff;
+  border: 2px solid #333378;
   float: left;
   margin-top: 5px;
 }
@@ -5666,4 +5671,21 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   .rm-small {
     display: none;
   }
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Architects Daughter Regular'), local('ArchitectsDaughter-Regular'), url(https://fonts.gstatic.com/s/architectsdaughter/v10/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg5g.ttf) format('truetype');
+}
+.rm-max .rm-mobile {
+  background-color: #333378;
 }

@@ -374,7 +374,7 @@ img {
   max-width: 100%;
 }
 a {
-  color: black;
+  color: white;
 }
 h1,
 h2,
@@ -763,8 +763,9 @@ hr::after {
   margin-right: 0.52083333%;
 }
 .my-navbar li {
-  background-color: #ccc;
+  background-color: black;
   opacity: 0.8;
+  color: white;
 }
 .site-logo {
   display: none;
@@ -807,6 +808,11 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
+  background-color: black;
+}
+.site-logo-text a {
+  text-decoration: none;
+  color: white;
 }
 .region-header,
 .region-flash,
@@ -815,6 +821,9 @@ hr::after {
 .inner-wrap-flash .row {
   margin: 0;
   width: 100%;
+}
+a.rm-button .rm-button-face-1 {
+  color: white;
 }
 /* Main */
 .region-sidebar-left,

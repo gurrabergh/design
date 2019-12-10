@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Base design for kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -368,7 +368,7 @@ body {
   padding: 0;
   color: black;
   background-color: #ccc;
-  font: 16px/1.375 Verdana, Geneva, sans-serif;
+  font: 16px/1.375 "sans-serif";
 }
 img {
   max-width: 100%;
@@ -382,7 +382,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "serif";
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -506,7 +506,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "monospace";
 }
 code,
 samp {
@@ -897,7 +897,7 @@ a.rm-button .rm-button-face-1 {
   padding: 5px;
 }
 .author-byline {
-  border: 2px solid #fff;
+  border: 2px solid white;
   float: left;
   margin-top: 5px;
 }

@@ -1,7 +1,12 @@
 /*!
- * Stylesheet for design kmom03.
+ * Minimalistic theme for kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+/*!
+ * Base design for kmom04.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -367,14 +372,14 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #ccc;
-  font: 16px/1.375 Verdana, Geneva, sans-serif;
+  background-color: #fff;
+  font: 16px/1.375 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
 }
 img {
   max-width: 100%;
 }
 a {
-  color: white;
+  color: black;
 }
 h1,
 h2,
@@ -382,7 +387,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -763,7 +768,7 @@ hr::after {
   margin-right: 0.52083333%;
 }
 .my-navbar li {
-  background-color: black;
+  background-color: #54575c;
   opacity: 0.8;
   color: white;
 }
@@ -808,7 +813,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: black;
+  background-color: #54575c;
 }
 .site-logo-text a {
   text-decoration: none;
@@ -879,7 +884,7 @@ a.rm-button .rm-button-face-1 {
 }
 /* Footer */
 .outer-wrap-footer {
-  background-color: black;
+  background-color: #54575c;
   color: white;
 }
 .site-footer {
@@ -897,7 +902,7 @@ a.rm-button .rm-button-face-1 {
   padding: 5px;
 }
 .author-byline {
-  border: 2px solid #fff;
+  border: 2px solid #54575c;
   float: left;
   margin-top: 5px;
 }
@@ -5666,4 +5671,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   .rm-small {
     display: none;
   }
+}
+.rm-max .rm-mobile {
+  background-color: #54575c;
 }
