@@ -730,6 +730,10 @@ hr::after {
 }
 .next-previous {
   margin-bottom: 22px;
+  clear: both;
+}
+.meta-footer {
+  clear: both;
 }
 /* Container */
 .vgrid .inner-wrap {
@@ -755,7 +759,7 @@ hr::after {
 .region-header-col-3 {
   display: inline;
   float: left;
-  width: 19.79166667%;
+  width: 15.625%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
@@ -763,7 +767,7 @@ hr::after {
   text-align: center;
   display: inline;
   float: left;
-  width: 57.29166667%;
+  width: 65.625%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
@@ -5654,17 +5658,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Example on media queries
   */
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1150px) {
   .rm-small {
     display: block;
   }
   .rm-desktop {
     display: none;
-  }
-  .footer-column {
-    width: 100%;
-    float: none;
-    text-align: center;
   }
 }
 @media screen and (min-width: 680px) {

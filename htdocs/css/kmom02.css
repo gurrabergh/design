@@ -5166,17 +5166,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Example on media queries
   */
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1150px) {
   .rm-small {
     display: block;
   }
   .rm-desktop {
     display: none;
-  }
-  .footer-column {
-    width: 100%;
-    float: none;
-    text-align: center;
   }
 }
 @media screen and (min-width: 680px) {

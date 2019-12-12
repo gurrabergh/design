@@ -21,7 +21,7 @@ analysera vad webbplatsen vill förmedla.
 Resultat
 -----------------------
 #### Nordea
-[FIGURE src=image/nordea.jpg?w=1000]
+[FIGURE src=image/nordea.JPG?w=1000]
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -40,7 +40,7 @@ Typsnittet för framsidan på denna webbplats är "NordeaSans". Ett typsnitt uta
 Jag tror Nordea gjort ett medvetet val av färschema samt typsnitt som motsvarar den profil dom vill ha.
 
 #### Handelsbanken
-[FIGURE src=image/handelsbanken.jpg?w=1000]
+[FIGURE src=image/handelsbanken.JPG?w=1000]
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -58,7 +58,7 @@ Det används två olika typsnitt till denna webbplats. För headings används St
 Jag tror att webbplatsens design, färgval och typografi motsvarar profilen som Handelsbanken är ute efter.
 
 #### SEB
-[FIGURE src=image/seb.jpg?w=1000]
+[FIGURE src=image/SEB.JPG?w=1000]
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
