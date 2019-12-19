@@ -1,12 +1,32 @@
 /*!
- * Stylesheet for design kmom03.
+ * designelement design for kmom06.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
  /**
  * Normalize and reset the style.
  */
 @import "normalize.css/normalize.less";
+
+/** Import @desinax/figure **/
+@import "@desinax/figure/less/figure.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/asciinema.less";
+
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
 
 /**
  * Import the typographic grid.
@@ -34,7 +54,7 @@
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/vgrid.less";
+@import "layout/layout06.less";
 
 // Default grid, change to fit your requirements.
 //@columnWidth:   30;
@@ -67,11 +87,40 @@
 @import "@desinax/responsive-menu/less/responsive-menu.less";
 @import "@desinax/responsive-menu/less/media-queries.less";
 
-// Set font family to use
-@fontFamilyHeadings:  @fontFamilyTimesNewRoman;
-@fontFamilyBody:      @fontFamilyVerdana;
-@fontFamilyCode:      @fontFamilyCourier;
-
 // Magic number and base fontsize
 @magicNumber:  22px;  // 22px
 @fontSizeBody: 16px;
+
+body {
+    background: linear-gradient(to bottom, #3333ff 0%, #ff9900 100%);
+}
+
+.outer-wrap-footer {
+    background: url("../img/diagmonds-light.png") repeat; /* Background pattern from Toptal Subtle Patterns */
+}
+@colorBody: white;
+@navbarBG: #3333ff;
+@navbarCol: black;
+@inWrapHead: #3333ff;
+@siteLogoText: white;
+@burgarMeny: white;
+@footerTxt: black;
+@authBorder: #ff9900;
+@aColor: white;
+@bgColorCodeInline: black;
+@colorH1BorderBottom: #ff9900;
+@colorH2BorderBottom: #ff9900;
+@colorH3BorderBottom: #ff9900;
+@colorH4BorderBottom: #ff9900;
+@colorH5BorderBottom: #ff9900;
+@colorH6BorderBottom: #ff9900;
+
+@fontFamilyHeadings:  @fontFamilyHelveticaNeue;
+@fontFamilyBody:      @fontFamilyVerdana;
+@fontFamilyCode:      @fontFamilyCourier;
+
+
+.rm-desktop li a {
+	background-color: #ff9900;
+	border-radius: 25px;
+}

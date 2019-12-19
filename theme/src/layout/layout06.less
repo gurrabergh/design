@@ -1,0 +1,240 @@
+/**
+ * Layout using vgrid.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+@navbarBG: black;
+@navbarCol: white;
+@inWrapHead: black;
+@siteLogoText: white;
+@burgarMeny: white;
+@footerBG: black;
+@footerTxt: white;
+@authBorder: white;
+
+ .row {
+     #desinax-vgrid.row();
+ }
+
+ .inner-wrap {
+     #desinax-vgrid.grid(1100px);
+ }
+
+.inner-wrap-main {
+    margin-bottom: 22px;
+}
+
+ .next {
+     float: right;
+ }
+
+ .next-previous {
+	margin-bottom: 22px;
+    clear: both;
+}
+
+.meta-footer {
+	clear: both;
+}
+
+ /* Container */
+
+
+ .vgrid .inner-wrap {
+     @gridImage: "../img/grid_24x30x10-nomargin.png";
+     //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+     #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+     &.inner-wrap-header {
+         #desinax-vgrid.showGrid(@gridImage);
+     }
+ }
+
+ /* Header */
+
+ .region-header-col-1,
+ .region-header-col-3 {
+     #desinax-vgrid.column(4);
+ }
+
+ .region-header-col-2 {
+     text-align: center;
+     #desinax-vgrid.column(16);
+ }
+
+ .my-navbar li {
+     background-color: @navbarBG;
+     opacity: 0.9;
+     color: @navbarCol;
+     border-radius: 5px;
+ }
+
+ .site-logo {
+     display: none;
+ }
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.breadcrumb-list li::after, .bullet-list li::after {
+	content: " » ";
+}
+
+.breadcrumb-list ul, .bullet-list ul {
+	list-style-type: none;
+    text-decoration: none;
+}
+
+.breadcrumb-list li, .bullet-list li {
+	display: inline;
+}
+
+.breadcrumb-list li a, .bullet-list li a {
+	text-decoration: none;
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.route- .outer-wrap-flash {
+	margin-bottom: 22px;
+}
+
+ .inner-wrap-header {
+     #desinax-vgrid.grid(100%);
+     background-color: @inWrapHead;
+
+ }
+
+ .site-logo-text a {
+     text-decoration: none;
+     color: @siteLogoText;
+ }
+
+ .region-header,
+ .region-flash,
+ .inner-wrap-footer .row,
+ .inner-wrap-header .row,
+ .inner-wrap-flash .row {
+     margin: 0;
+     width: 100%;
+ }
+
+a.rm-button .rm-button-face-1 {
+    color: @burgarMeny;
+}
+
+ /* Main */
+
+ .region-sidebar-left,
+ .region-sidebar-right {
+     #desinax-vgrid.column(@columns * 1 / 4);
+ }
+
+ .region-main {
+     #desinax-vgrid.column(@columns * 3 / 4);
+     #desinax-vgrid.push(2);
+
+     &.has-sidebar {
+         #desinax-vgrid.push(0);
+     }
+
+     &.has-sidebar-right {
+         #desinax-vgrid.column(@columns * 3 / 4 - 1);
+     }
+
+     &.has-sidebar-left.has-sidebar-right {
+         #desinax-vgrid.column(@columns - 10);
+     }
+ }
+
+ .region-sidebar-right {
+     #desinax-vgrid.push(1);
+ }
+
+ .region-sidebar-left.has-sidebar-right,
+ .region-sidebar-right.has-sidebar-left {
+     #desinax-vgrid.column(@columns * 1 / 4 - 1);
+ }
+
+ .wrap-sidebar .block {
+	margin-bottom: 44px;
+}
+
+.figure.figure.right {
+    float: right;
+    margin-bottom: 66px;
+}
+
+
+ /* Footer */
+
+ .outer-wrap-footer {
+     //background-color: @footerBG;
+     color: @footerTxt;
+ }
+
+ .site-footer {
+     #desinax-vgrid.column(@columns);
+     text-align: center;
+     margin-bottom: 22px;
+ }
+
+ .author-byline img {
+     width: 80px;
+     float: left;
+     padding: 5px;
+ }
+
+ .author-byline {
+      border: 2px solid @authBorder;
+      float: left;
+      margin-top: 5px;
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+     margin-bottom: 22px;
+ }
+
+ // Media queries
+
+ @media (max-width: 1000px) {
+     .region-main {
+         #desinax-vgrid.column(@columns);
+
+         &.has-sidebar-left.has-sidebar-right {
+             #desinax-vgrid.column(@columns);
+         }
+     }
+
+     .region-sidebar-left {
+         #desinax-vgrid.column(@columns);
+     }
+
+     .region-sidebar-left.has-sidebar-right,
+     .region-sidebar-right.has-sidebar-left {
+         #desinax-vgrid.column(@columns);
+     }
+}
+
+ @media screen and (max-width: 850px) {
+     .region-main.has-sidebar-right {
+         #desinax-vgrid.column(@columns);
+     }
+
+     .region-sidebar-right {
+         #desinax-vgrid.push(0);
+         #desinax-vgrid.column(@columns);
+     }
+ }
