@@ -1,1 +1,1 @@
-Copyright 2019 © Gustav Berg
+Copyright 2020 © Gustav Berg
